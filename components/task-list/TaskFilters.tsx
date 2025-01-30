@@ -42,8 +42,8 @@ export function TaskFilters() {
           onClick={() => setActiveFilter("active")}
           className={
             activeFilter === "active"
-              ? "bg-purple-600 hover:bg-purple-700"
-              : "border-purple-500/20 hover:bg-purple-600/10"
+              ? "bg-purple-600 text-white hover:bg-purple-700"
+              : "border-purple-500/20 bg-black text-white hover:text-white hover:bg-purple-600/10"
           }
         >
           Active
@@ -53,8 +53,8 @@ export function TaskFilters() {
           onClick={() => setActiveFilter("upcoming")}
           className={
             activeFilter === "upcoming"
-              ? "bg-purple-600 hover:bg-purple-700"
-              : "border-purple-500/20 hover:bg-purple-600/10"
+              ? "bg-purple-600 text-white hover:bg-purple-700"
+              : "border-purple-500/20 bg-black text-white hover:text-white hover:bg-purple-600/10"
           }
         >
           Upcoming
@@ -64,8 +64,8 @@ export function TaskFilters() {
           onClick={() => setActiveFilter("past")}
           className={
             activeFilter === "past"
-              ? "bg-purple-600 hover:bg-purple-700"
-              : "border-purple-500/20 hover:bg-purple-600/10"
+              ? "bg-purple-600 text-white hover:bg-purple-700"
+              : "border-purple-500/20 bg-black text-white hover:text-white hover:bg-purple-600/10"
           }
         >
           Past
