@@ -35,7 +35,7 @@ export function NavBar() {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between relative">
         <div className="flex items-center gap-8">
           <Link href="/" className="text-2xl font-bold text-white">
-            Infinex<span className="text-purple-500">Platform</span>
+            Innfinex<span className="text-purple-500">Platform</span>
           </Link>
           {!isAuthPage && (
             <div className="relative hidden md:block">
@@ -52,11 +52,8 @@ export function NavBar() {
         {!isAuthPage && (
           <div className="flex items-center gap-6">
             <div className="hidden md:flex items-center gap-6">
-              <Link
-                href="/challenges"
-                className="text-gray-300 hover:text-white"
-              >
-                Challenges
+              <Link href="/task" className="text-gray-300 hover:text-white">
+                Explore Tasks
               </Link>
               <Link
                 href="/community"

@@ -1,32 +1,7 @@
 import { Trophy, CalendarDays, Clock, Tag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-
-const taskTags = [
-  {
-    name: "Figma",
-    color: "bg-purple-500/20 text-purple-400 border-purple-500/30",
-  },
-  {
-    name: "Adobe Suite",
-    color: "bg-red-500/20 text-red-400 border-red-500/30",
-  },
-  { name: "Sketch", color: "bg-blue-500/20 text-blue-400 border-blue-500/30" },
-  //   {
-  //     name: "InVision",
-  //     color: "bg-pink-500/20 text-pink-400 border-pink-500/30",
-  //   },
-  //   { name: "GitHub", color: "bg-gray-500/20 text-gray-400 border-gray-500/30" },
-  //   {
-  //     name: "AWS",
-  //     color: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
-  //   },
-  //   { name: "Docker", color: "bg-cyan-500/20 text-cyan-400 border-cyan-500/30" },
-  //   {
-  //     name: "Unity",
-  //     color: "bg-green-500/20 text-green-400 border-green-500/30",
-  //   },
-];
+import { taskTags } from "@/content/taskList";
 
 export function TaskHeader({ task }: { task: any }) {
   if (!task) return null;
@@ -37,14 +12,16 @@ export function TaskHeader({ task }: { task: any }) {
         <div className="flex flex-col items-start">
           <div>
             <div className="flex flex-wrap gap-2 mb-4">
-              {taskTags.map((tag) => (
+              {task.taskDomains.map((domain: string) => (
                 <Badge
-                  key={tag.name}
+                  key={domain}
                   variant="outline"
-                  className={`${tag.color} transition-colors duration-200 hover:bg-opacity-30`}
+                  className={`${
+                    taskTags[domain as keyof typeof taskTags]
+                  } transition-colors duration-200 hover:bg-opacity-30`}
                 >
                   <Tag className="w-3 h-3 mr-1" />
-                  {tag.name}
+                  {domain}
                 </Badge>
               ))}
             </div>

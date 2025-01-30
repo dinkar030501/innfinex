@@ -10,7 +10,7 @@ export function TasksSection() {
   const displayedTasks = engineeringChallenges.slice(0, 9);
 
   return (
-    <section className="py-12 bg-black relative overflow-hidden">
+    <section className="bg-gradient-to-b from-black to-theme-primary-dark/40 py-12 relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           {/* Left side - Challenge Cards */}
@@ -29,18 +29,11 @@ export function TasksSection() {
               <Button
                 size="lg"
                 className="bg-purple-600 hover:bg-purple-700"
-                onClick={() => router.push("/dashboard")}
+                onClick={() => router.push("/task")}
               >
                 Browse All Tasks
               </Button>
             </div>
-            {/* <div className="flex justify-center lg:justify-start">
-              <img
-                src="/goal-svgrepo-com.png"
-                alt="Goal Icon"
-                className="w-full opacity-70"
-              />
-            </div> */}
           </div>
           {/* Right side - Content */}
 
