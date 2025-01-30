@@ -61,7 +61,7 @@ function CommunityHighlight({
 
 export function Community() {
   return (
-    <section className="py-24 bg-gradient-to-b from-theme-primary-dark/40 to-black">
+    <section className="py-24 bg-gradient-to-b from-black to-theme-primary-dark/40">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">

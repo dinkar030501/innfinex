@@ -13,7 +13,6 @@ export default function LandingPage() {
         <HowItWorks />
         <Community />
       </main>
-      <Footer />
     </>
   );
 }

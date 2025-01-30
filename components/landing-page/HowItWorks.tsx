@@ -20,7 +20,7 @@ function FeatureCard({ icon, title, description }: FeatureCardProps) {
 
 export function HowItWorks() {
   return (
-    <section className="bg-gradient-to-b from-black to-theme-primary-dark/40 py-12 md:py-20">
+    <section className="bg-gradient-to-b from-theme-primary-dark/40 to-black py-12 md:py-20">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center text-white mb-16">
           How It Works

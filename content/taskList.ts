@@ -1,3 +1,14 @@
+export const taskTags = {
+  Figma: "bg-purple-500/20 text-purple-400 border-purple-500/30",
+  "Adobe Suite": "bg-red-500/20 text-red-400 border-red-500/30",
+  Sketch: "bg-blue-500/20 text-blue-400 border-blue-500/30",
+  InVision: "bg-pink-500/20 text-pink-400 border-pink-500/30",
+  GitHub: "bg-gray-500/20 text-gray-400 border-gray-500/30",
+  AWS: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
+  Docker: "bg-cyan-500/20 text-cyan-400 border-cyan-500/30",
+  Unity: "bg-green-500/20 text-green-400 border-green-500/30",
+};
+
 // Featured challenges for hero section
 export const featuredChallenges = [
   {
@@ -12,6 +23,7 @@ export const featuredChallenges = [
     description:
       "Participants will work on refining AI models to enhance accuracy, speed, and resource efficiency in real-world applications.",
     participants: 8745,
+    taskDomains: ["Figma", "Adobe Suite", "Sketch"],
   },
   {
     title: "Sustainable Code Architecture",
@@ -24,6 +36,7 @@ export const featuredChallenges = [
     description:
       "This challenge focuses on building robust, maintainable, and energy-efficient software architectures that minimize environmental impact.",
     participants: 2145,
+    taskDomains: ["AWS", "Docker", "GitHub"],
   },
   {
     title: "Quantum Computing Algorithm",
@@ -37,6 +50,7 @@ export const featuredChallenges = [
     description:
       "Participants will explore and create innovative quantum algorithms to solve complex computational problems more efficiently than classical approaches.",
     participants: 21945,
+    taskDomains: ["Unity", "InVision"],
   },
 ];
 
@@ -54,6 +68,7 @@ export const engineeringChallenges = [
     description:
       "This challenge involves optimizing ML workflows, improving data processing, and reducing training times while maintaining model accuracy.",
     participants: 9145,
+    taskDomains: ["Sketch", "Figma"],
   },
   {
     title: "Cloud Infrastructure Security",
@@ -66,6 +81,7 @@ export const engineeringChallenges = [
     description:
       "Participants will design and implement security solutions to protect cloud infrastructure against cyber threats and vulnerabilities.",
     participants: 2145,
+    taskDomains: ["AWS", "GitHub", "Docker"],
   },
   {
     title: "Real-time Analytics Dashboard",
@@ -78,6 +94,7 @@ export const engineeringChallenges = [
     description:
       "This challenge focuses on building dashboards capable of processing and visualizing large-scale streaming data in real-time.",
     participants: 2145,
+    taskDomains: ["Adobe Suite"],
   },
   {
     title: "Mobile App Performance",
@@ -90,6 +107,7 @@ export const engineeringChallenges = [
     description:
       "Developers will work on enhancing mobile app responsiveness, battery efficiency, and load times for better user experience.",
     participants: 2145,
+    taskDomains: ["Unity", "Figma"],
   },
   {
     title: "Blockchain Smart Contracts",
@@ -103,6 +121,7 @@ export const engineeringChallenges = [
     description:
       "This challenge involves writing and optimizing smart contracts to ensure security, efficiency, and scalability in blockchain applications.",
     participants: 2145,
+    taskDomains: ["GitHub", "AWS"],
   },
   {
     title: "DevOps Automation Challenge",
@@ -111,11 +130,11 @@ export const engineeringChallenges = [
     organizer: "DataFlow Inc",
     organizerImage: "/organizers/dataflow.png",
     slug: "devops-automation-challenge",
-    summary:
-      "Build and train advanced AI models to solve complex real-world problems",
+    summary: "Automate and streamline DevOps pipelines for faster deployments",
     description:
-      "Build and train advanced AI models to solve complex real-world problems",
+      "Create innovative solutions to automate CI/CD pipelines, infrastructure provisioning, and monitoring systems for efficient software delivery.",
     participants: 2145,
+    taskDomains: ["Docker", "AWS"],
   },
   {
     title: "Edge Computing Solutions",
@@ -125,10 +144,11 @@ export const engineeringChallenges = [
     organizerImage: "/organizers/techcorp.png",
     slug: "edge-computing-solutions",
     summary:
-      "Build and train advanced AI models to solve complex real-world problems",
+      "Develop efficient edge computing architectures for real-time processing",
     description:
-      "Build and train advanced AI models to solve complex real-world problems",
+      "Design and implement edge computing solutions that enable low-latency processing and data analysis closer to the source of data generation.",
     participants: 2145,
+    taskDomains: ["AWS", "Docker"],
   },
   {
     title: "Natural Language Processing",
@@ -137,11 +157,11 @@ export const engineeringChallenges = [
     organizer: "QuantumLabs",
     organizerImage: "/organizers/quantumlabs.png",
     slug: "natural-language-processing",
-    summary:
-      "Build and train advanced AI models to solve complex real-world problems",
+    summary: "Create advanced NLP models for text understanding and generation",
     description:
-      "Build and train advanced AI models to solve complex real-world problems",
+      "Develop cutting-edge natural language processing models for tasks like sentiment analysis, text summarization, and language translation.",
     participants: 2145,
+    taskDomains: ["GitHub", "Unity"],
   },
   {
     title: "Microservices Architecture",
@@ -150,11 +170,11 @@ export const engineeringChallenges = [
     organizer: "GreenTech Solutions",
     organizerImage: "/organizers/greentech.png",
     slug: "microservices-architecture",
-    summary:
-      "Build and train advanced AI models to solve complex real-world problems",
+    summary: "Design scalable and maintainable microservices systems",
     description:
-      "Build and train advanced AI models to solve complex real-world problems",
+      "Create robust microservices architectures that enable independent deployment, scalability, and fault tolerance in distributed systems.",
     participants: 2145,
+    taskDomains: ["Docker", "AWS"],
   },
   {
     title: "IoT Data Processing",
@@ -163,11 +183,11 @@ export const engineeringChallenges = [
     organizer: "DataFlow Inc",
     organizerImage: "/organizers/dataflow.png",
     slug: "iot-data-processing",
-    summary:
-      "Build and train advanced AI models to solve complex real-world problems",
+    summary: "Develop efficient IoT data processing pipelines",
     description:
-      "Build and train advanced AI models to solve complex real-world problems",
+      "Build systems for collecting, processing, and analyzing massive streams of data from IoT devices in real-time.",
     participants: 2145,
+    taskDomains: ["AWS", "GitHub"],
   },
   {
     title: "API Security Challenge",
@@ -176,11 +196,11 @@ export const engineeringChallenges = [
     organizer: "TechCorp AI",
     organizerImage: "/organizers/techcorp.png",
     slug: "api-security-challenge",
-    summary:
-      "Build and train advanced AI models to solve complex real-world problems",
+    summary: "Enhance API security and protect against vulnerabilities",
     description:
-      "Build and train advanced AI models to solve complex real-world problems",
+      "Develop solutions to secure APIs against common threats like DDoS attacks, injection vulnerabilities, and unauthorized access.",
     participants: 2145,
+    taskDomains: ["GitHub", "Docker"],
   },
   {
     title: "Database Optimization",
@@ -189,11 +209,11 @@ export const engineeringChallenges = [
     organizer: "QuantumLabs",
     organizerImage: "/organizers/quantumlabs.png",
     slug: "database-optimization",
-    summary:
-      "Build and train advanced AI models to solve complex real-world problems",
+    summary: "Optimize database performance and query efficiency",
     description:
-      "Build and train advanced AI models to solve complex real-world problems",
+      "Develop techniques to improve database query performance, indexing strategies, and storage optimization for large-scale systems.",
     participants: 2145,
+    taskDomains: ["AWS", "GitHub"],
   },
   {
     title: "UI/UX Innovation",
@@ -202,11 +222,11 @@ export const engineeringChallenges = [
     organizer: "GreenTech Solutions",
     organizerImage: "/organizers/greentech.png",
     slug: "ui-ux-innovation",
-    summary:
-      "Build and train advanced AI models to solve complex real-world problems",
+    summary: "Create innovative and user-friendly interface designs",
     description:
-      "Build and train advanced AI models to solve complex real-world problems",
+      "Design and implement cutting-edge user interfaces that provide exceptional user experiences across different platforms and devices.",
     participants: 2145,
+    taskDomains: ["Figma", "Sketch"],
   },
   {
     title: "5G Network Solutions",
@@ -215,11 +235,11 @@ export const engineeringChallenges = [
     organizer: "DataFlow Inc",
     organizerImage: "/organizers/dataflow.png",
     slug: "5g-network-solutions",
-    summary:
-      "Build and train advanced AI models to solve complex real-world problems",
+    summary: "Develop innovative solutions for 5G network optimization",
     description:
-      "Build and train advanced AI models to solve complex real-world problems",
+      "Create solutions to enhance 5G network performance, including latency reduction, bandwidth optimization, and network slicing techniques.",
     participants: 2145,
+    taskDomains: ["AWS", "Docker"],
   },
   {
     title: "AR/VR Development",
@@ -228,10 +248,10 @@ export const engineeringChallenges = [
     organizer: "VirtualTech",
     organizerImage: "/organizers/virtualtech.jpg",
     slug: "ar-vr-development",
-    summary:
-      "Build and train advanced AI models to solve complex real-world problems",
+    summary: "Create immersive AR/VR experiences and applications",
     description:
-      "Build and train advanced AI models to solve complex real-world problems",
+      "Develop innovative augmented and virtual reality applications with focus on user interaction, performance optimization, and realistic rendering.",
     participants: 2145,
+    taskDomains: ["Unity", "Sketch"],
   },
 ];
