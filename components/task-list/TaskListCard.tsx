@@ -59,20 +59,6 @@ export function TaskListCard({
           >
             {status.text}
           </Badge> */}
-          <div className="flex flex-wrap gap-2 absolute top-4 right-4">
-            {taskDomains?.map((domain: string) => (
-              <Badge
-                key={domain}
-                variant="outline"
-                className={`${
-                  taskTags[domain as keyof typeof taskTags]
-                } transition-colors duration-200 bg-black hover:bg-opacity-30`}
-              >
-                <Tag className="w-3 h-3 mr-1" />
-                {domain}
-              </Badge>
-            ))}
-          </div>
         </div>
         <div className="p-6">
           <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-purple-400 transition-colors">
@@ -118,6 +104,20 @@ export function TaskListCard({
                 />
               </div>
               <span className="text-sm text-gray-400">{organizer}</span>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {taskDomains?.map((domain: string) => (
+                <Badge
+                  key={domain}
+                  variant="outline"
+                  className={`${
+                    taskTags[domain as keyof typeof taskTags]
+                  } transition-colors duration-200 bg-black hover:bg-opacity-30`}
+                >
+                  <Tag className="w-3 h-3 mr-1" />
+                  {domain}
+                </Badge>
+              ))}
             </div>
           </div>
         </div>
