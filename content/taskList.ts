@@ -26,6 +26,13 @@ export const featuredChallenges: Task[] = [
             'Participants will work on refining AI models to enhance accuracy, speed, and resource efficiency in real-world applications.',
         participants: 8745,
         taskDomains: ['Figma', 'Adobe Suite', 'Sketch'],
+        timeline: [
+            {
+                date: '2024-01-01',
+                title: 'Task 1',
+                description: 'Description of task 1',
+            },
+        ],
     },
     {
         title: 'Sustainable Code Architecture',
@@ -39,6 +46,18 @@ export const featuredChallenges: Task[] = [
             'This challenge focuses on building robust, maintainable, and energy-efficient software architectures that minimize environmental impact.',
         participants: 2145,
         taskDomains: ['AWS', 'Docker', 'GitHub'],
+        timeline: [
+            {
+                date: '2024-02-01',
+                title: 'Initial Design',
+                description: 'Create architecture blueprint',
+            },
+            {
+                date: '2024-02-15',
+                title: 'Implementation',
+                description: 'Develop core components',
+            },
+        ],
     },
     {
         title: 'Quantum Computing Algorithm',
@@ -53,6 +72,18 @@ export const featuredChallenges: Task[] = [
             'Participants will explore and create innovative quantum algorithms to solve complex computational problems more efficiently than classical approaches.',
         participants: 21945,
         taskDomains: ['Unity', 'InVision'],
+        timeline: [
+            {
+                date: '2024-03-01',
+                title: 'Research',
+                description: 'Study quantum computing principles',
+            },
+            {
+                date: '2024-03-15',
+                title: 'Prototype',
+                description: 'Develop initial algorithm',
+            },
+        ],
     },
 ]
 
@@ -70,6 +101,18 @@ export const engineeringChallenges: Task[] = [
             'This challenge involves optimizing ML workflows, improving data processing, and reducing training times while maintaining model accuracy.',
         participants: 9145,
         taskDomains: ['Sketch', 'Figma'],
+        timeline: [
+            {
+                date: '2024-04-01',
+                title: 'Analysis',
+                description: 'Identify bottlenecks',
+            },
+            {
+                date: '2024-04-15',
+                title: 'Optimization',
+                description: 'Implement improvements',
+            },
+        ],
     },
     {
         title: 'Cloud Infrastructure Security',
@@ -83,6 +126,18 @@ export const engineeringChallenges: Task[] = [
             'Participants will design and implement security solutions to protect cloud infrastructure against cyber threats and vulnerabilities.',
         participants: 2145,
         taskDomains: ['AWS', 'GitHub', 'Docker'],
+        timeline: [
+            {
+                date: '2024-05-01',
+                title: 'Assessment',
+                description: 'Identify vulnerabilities',
+            },
+            {
+                date: '2024-05-15',
+                title: 'Implementation',
+                description: 'Deploy security measures',
+            },
+        ],
     },
     {
         title: 'Real-time Analytics Dashboard',
@@ -96,6 +151,18 @@ export const engineeringChallenges: Task[] = [
             'This challenge focuses on building dashboards capable of processing and visualizing large-scale streaming data in real-time.',
         participants: 2145,
         taskDomains: ['Adobe Suite'],
+        timeline: [
+            {
+                date: '2024-06-01',
+                title: 'Design',
+                description: 'Create dashboard layout',
+            },
+            {
+                date: '2024-06-15',
+                title: 'Development',
+                description: 'Implement data processing',
+            },
+        ],
     },
     {
         title: 'Mobile App Performance',
@@ -109,6 +176,18 @@ export const engineeringChallenges: Task[] = [
             'Developers will work on enhancing mobile app responsiveness, battery efficiency, and load times for better user experience.',
         participants: 2145,
         taskDomains: ['Unity', 'Figma'],
+        timeline: [
+            {
+                date: '2024-07-01',
+                title: 'Performance Analysis',
+                description: 'Analyze current app performance metrics',
+            },
+            {
+                date: '2024-07-15',
+                title: 'Optimization',
+                description: 'Implement performance improvements',
+            },
+        ],
     },
     {
         title: 'Blockchain Smart Contracts',
@@ -122,6 +201,18 @@ export const engineeringChallenges: Task[] = [
             'This challenge involves writing and optimizing smart contracts to ensure security, efficiency, and scalability in blockchain applications.',
         participants: 2145,
         taskDomains: ['GitHub', 'AWS'],
+        timeline: [
+            {
+                date: '2024-08-01',
+                title: 'Design',
+                description: 'Design smart contract architecture',
+            },
+            {
+                date: '2024-08-15',
+                title: 'Development',
+                description: 'Develop and test smart contracts',
+            },
+        ],
     },
     {
         title: 'DevOps Automation Challenge',
@@ -135,6 +226,18 @@ export const engineeringChallenges: Task[] = [
             'Create innovative solutions to automate CI/CD pipelines, infrastructure provisioning, and monitoring systems for efficient software delivery.',
         participants: 2145,
         taskDomains: ['Docker', 'AWS'],
+        timeline: [
+            {
+                date: '2024-09-01',
+                title: 'Assessment',
+                description: 'Evaluate current DevOps processes',
+            },
+            {
+                date: '2024-09-15',
+                title: 'Automation',
+                description: 'Implement automation solutions',
+            },
+        ],
     },
     {
         title: 'Edge Computing Solutions',
@@ -149,6 +252,18 @@ export const engineeringChallenges: Task[] = [
             'Design and implement edge computing solutions that enable low-latency processing and data analysis closer to the source of data generation.',
         participants: 2145,
         taskDomains: ['AWS', 'Docker'],
+        timeline: [
+            {
+                date: '2024-10-01',
+                title: 'Research',
+                description: 'Research edge computing technologies',
+            },
+            {
+                date: '2024-10-15',
+                title: 'Implementation',
+                description: 'Develop edge computing solutions',
+            },
+        ],
     },
     {
         title: 'Natural Language Processing',
@@ -162,6 +277,18 @@ export const engineeringChallenges: Task[] = [
             'Develop cutting-edge natural language processing models for tasks like sentiment analysis, text summarization, and language translation.',
         participants: 2145,
         taskDomains: ['GitHub', 'Unity'],
+        timeline: [
+            {
+                date: '2024-11-01',
+                title: 'Model Design',
+                description: 'Design NLP model architecture',
+            },
+            {
+                date: '2024-11-15',
+                title: 'Training',
+                description: 'Train NLP models on datasets',
+            },
+        ],
     },
     {
         title: 'Microservices Architecture',
@@ -175,6 +302,18 @@ export const engineeringChallenges: Task[] = [
             'Create robust microservices architectures that enable independent deployment, scalability, and fault tolerance in distributed systems.',
         participants: 2145,
         taskDomains: ['Docker', 'AWS'],
+        timeline: [
+            {
+                date: '2024-12-01',
+                title: 'Architecture Design',
+                description: 'Design microservices architecture',
+            },
+            {
+                date: '2024-12-15',
+                title: 'Development',
+                description: 'Develop microservices components',
+            },
+        ],
     },
     {
         title: 'IoT Data Processing',
@@ -188,6 +327,18 @@ export const engineeringChallenges: Task[] = [
             'Build systems for collecting, processing, and analyzing massive streams of data from IoT devices in real-time.',
         participants: 2145,
         taskDomains: ['AWS', 'GitHub'],
+        timeline: [
+            {
+                date: '2025-01-01',
+                title: 'Data Collection',
+                description: 'Set up IoT data collection systems',
+            },
+            {
+                date: '2025-01-15',
+                title: 'Processing',
+                description: 'Implement data processing pipelines',
+            },
+        ],
     },
     {
         title: 'API Security Challenge',
@@ -201,6 +352,18 @@ export const engineeringChallenges: Task[] = [
             'Develop solutions to secure APIs against common threats like DDoS attacks, injection vulnerabilities, and unauthorized access.',
         participants: 2145,
         taskDomains: ['GitHub', 'Docker'],
+        timeline: [
+            {
+                date: '2025-02-01',
+                title: 'Security Assessment',
+                description: 'Assess current API security measures',
+            },
+            {
+                date: '2025-02-15',
+                title: 'Enhancement',
+                description: 'Implement security enhancements',
+            },
+        ],
     },
     {
         title: 'Database Optimization',
@@ -214,6 +377,18 @@ export const engineeringChallenges: Task[] = [
             'Develop techniques to improve database query performance, indexing strategies, and storage optimization for large-scale systems.',
         participants: 2145,
         taskDomains: ['AWS', 'GitHub'],
+        timeline: [
+            {
+                date: '2025-03-01',
+                title: 'Analysis',
+                description: 'Analyze database performance issues',
+            },
+            {
+                date: '2025-03-15',
+                title: 'Optimization',
+                description: 'Implement optimization strategies',
+            },
+        ],
     },
     {
         title: 'UI/UX Innovation',
@@ -227,6 +402,18 @@ export const engineeringChallenges: Task[] = [
             'Design and implement cutting-edge user interfaces that provide exceptional user experiences across different platforms and devices.',
         participants: 2145,
         taskDomains: ['Figma', 'Sketch'],
+        timeline: [
+            {
+                date: '2025-04-01',
+                title: 'Design',
+                description: 'Create UI/UX design concepts',
+            },
+            {
+                date: '2025-04-15',
+                title: 'Implementation',
+                description: 'Develop and test UI/UX designs',
+            },
+        ],
     },
     {
         title: '5G Network Solutions',
@@ -240,6 +427,18 @@ export const engineeringChallenges: Task[] = [
             'Create solutions to enhance 5G network performance, including latency reduction, bandwidth optimization, and network slicing techniques.',
         participants: 2145,
         taskDomains: ['AWS', 'Docker'],
+        timeline: [
+            {
+                date: '2025-05-01',
+                title: 'Research',
+                description: 'Research 5G network technologies',
+            },
+            {
+                date: '2025-05-15',
+                title: 'Development',
+                description: 'Develop 5G optimization solutions',
+            },
+        ],
     },
     {
         title: 'AR/VR Development',
@@ -253,5 +452,17 @@ export const engineeringChallenges: Task[] = [
             'Develop innovative augmented and virtual reality applications with focus on user interaction, performance optimization, and realistic rendering.',
         participants: 2145,
         taskDomains: ['Unity', 'Sketch'],
+        timeline: [
+            {
+                date: '2025-06-01',
+                title: 'Concept Design',
+                description: 'Design AR/VR application concepts',
+            },
+            {
+                date: '2025-06-15',
+                title: 'Development',
+                description: 'Develop AR/VR applications',
+            },
+        ],
     },
 ]

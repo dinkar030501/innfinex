@@ -45,7 +45,7 @@ export function Footer() {
                             href="/"
                             className="text-2xl font-bold text-white mb-4 inline-block"
                         >
-                            DataAI<span className="text-purple-500">Platform</span>
+                            Innfinex<span className="text-purple-500">Platform</span>
                         </Link>
                         <p className="text-sm text-gray-400 mb-4">
                             Empowering the future of AI through collaborative data
