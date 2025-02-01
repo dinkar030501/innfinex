@@ -18,8 +18,8 @@ export async function GET() {
             return NextResponse.json({ message: 'User not found' }, { status: 404 })
         }
 
-        const { password, ...userWithoutPassword } = user
-        return NextResponse.json(userWithoutPassword)
+        user.password = undefined
+        return NextResponse.json(user)
     } catch {
         return NextResponse.json({ message: 'Something went wrong' }, { status: 500 })
     }
