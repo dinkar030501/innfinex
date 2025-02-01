@@ -1,6 +1,6 @@
 import { CalendarDays } from 'lucide-react'
 
-import { Task } from '@/types'
+import { Task, TaskTimeline } from '@/types'
 
 export function Timeline({ task }: { task: Task }) {
     return (
@@ -8,7 +8,7 @@ export function Timeline({ task }: { task: Task }) {
             <div className="max-w-3xl mx-auto space-y-8">
                 <h2 className="text-3xl font-bold text-white mb-8">Task Timeline</h2>
                 <div className="relative pl-6 border-l-2 border-purple-500/30">
-                    {task?.timeline?.map((item: any) => (
+                    {task?.timeline?.map((item: TaskTimeline) => (
                         <div key={item.date} className="mb-8 relative">
                             <div className="absolute w-3 h-3 bg-purple-500 rounded-full -left-[7px] top-2" />
                             <div className="p-6 bg-black/40 border border-purple-500/20 rounded-lg">
