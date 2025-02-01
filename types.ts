@@ -37,4 +37,9 @@ export interface Task {
     description: string
     participants: number
     taskDomains: string[]
+    timeline: {
+        date: string
+        title: string
+        description: string
+    }[]
 }

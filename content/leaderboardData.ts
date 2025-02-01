@@ -27,7 +27,7 @@ const leaderboardData: User[] = [
         id: 3,
         name: 'Emily Brown',
         points: 1000,
-        level: 4,
+        level: 5,
         badge: '🥉',
         avatar: 'https://api.dicebear.com/6.x/avataaars/svg?seed=Emily',
         timeTaken: '2h 45m',
