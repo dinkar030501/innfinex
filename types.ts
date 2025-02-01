@@ -37,9 +37,11 @@ export interface Task {
     description: string
     participants: number
     taskDomains: string[]
-    timeline: {
-        date: string
-        title: string
-        description: string
-    }[]
+    timeline: TaskTimeline[]
+}
+
+export interface TaskTimeline {
+    date: string
+    title: string
+    description: string
 }
