@@ -1,8 +1,11 @@
-"use client"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Overview } from "@/components/overview"
-import { TaskList } from "@/components/task-list"
-import { DollarSign, Star, Upload } from "lucide-react"
+'use client'
+
+import { useEffect, useState } from 'react'
+import { DollarSign, Star, Upload } from 'lucide-react'
+
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Overview } from '@/components/dashboard/Overview'
+import { TaskList } from '@/components/dashboard/TaskList'
 import {
     Table,
     TableBody,
@@ -10,9 +13,8 @@ import {
     TableHead,
     TableHeader,
     TableRow,
-} from "@/components/ui/table"
-import { Badge } from "@/components/ui/badge"
-import { useEffect, useState } from "react"
+} from '@/components/ui/table'
+import { Badge } from '@/components/ui/badge'
 
 interface Task {
     _id: string
@@ -28,7 +30,7 @@ export default function DashboardPage() {
 
     useEffect(() => {
         const fetchTasks = async () => {
-            const response = await fetch("/api/tasks")
+            const response = await fetch('/api/tasks')
             if (response.ok) {
                 const data = await response.json()
                 setTasks(data)
@@ -108,9 +110,7 @@ export default function DashboardPage() {
                                         </TableCell>
                                         <TableCell>{task.userName}</TableCell>
                                         <TableCell>
-                                            {new Date(
-                                                task.completedAt
-                                            ).toLocaleString()}
+                                            {new Date(task.completedAt).toLocaleString()}
                                         </TableCell>
                                         <TableCell>
                                             <Badge variant="secondary">
