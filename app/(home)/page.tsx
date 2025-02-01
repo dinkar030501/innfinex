@@ -5,7 +5,7 @@ import { TasksSection } from '@/components/landing-page/TasksSection'
 
 export default function Home() {
     return (
-        <main className="pt-16">
+        <main>
             <HeroSection />
             <TasksSection />
             <HowItWorks />

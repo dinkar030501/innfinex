@@ -1,3 +1,5 @@
+import { Task } from '@/types'
+
 export const taskTags = {
     Figma: 'bg-purple-500/20 text-purple-400 border-purple-500/30',
     'Adobe Suite': 'bg-red-500/20 text-red-400 border-red-500/30',
@@ -10,7 +12,7 @@ export const taskTags = {
 }
 
 // Featured challenges for hero section
-export const featuredChallenges = [
+export const featuredChallenges: Task[] = [
     {
         title: 'AI Model Optimization Challenge',
         prize: '$5,000 Prize Pool',
@@ -55,7 +57,7 @@ export const featuredChallenges = [
 ]
 
 // Extended list of engineering tasks and challenges
-export const engineeringChallenges = [
+export const engineeringChallenges: Task[] = [
     {
         title: 'ML Pipeline Optimization',
         prize: '$2,500 Prize Pool',
