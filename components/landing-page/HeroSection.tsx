@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 import { ChallengeCard } from '@/components/landing-page/ChallengeCard'
 import { StatsSection } from '@/components/landing-page/StatsSection'
 import { Button } from '@/components/ui/button'
-import { featuredChallenges } from '@/content/taskList'
+import { FEATURED_TASKS } from '@/content/taskList'
 
 export default function HeroSection() {
     const router = useRouter()
@@ -56,40 +56,13 @@ export default function HeroSection() {
                         <div className="md:w-1/2 relative h-[500px]">
                             <div className="relative h-full">
                                 <div className="absolute top-[5%] left-[65%] z-[3] hover:z-[10] transition-[z-index]">
-                                    <ChallengeCard
-                                        title={featuredChallenges[0].title}
-                                        prize={featuredChallenges[0].prize}
-                                        image={featuredChallenges[0].image}
-                                        organizer={featuredChallenges[0].organizer}
-                                        organizerImage={
-                                            featuredChallenges[0].organizerImage
-                                        }
-                                        slug={featuredChallenges[0].slug}
-                                    />
+                                    <ChallengeCard task={FEATURED_TASKS[0]} />
                                 </div>
                                 <div className="absolute top-[45%] left-[40%] z-[2] hover:z-[10] transition-[z-index]">
-                                    <ChallengeCard
-                                        title={featuredChallenges[1].title}
-                                        prize={featuredChallenges[1].prize}
-                                        image={featuredChallenges[1].image}
-                                        organizer={featuredChallenges[1].organizer}
-                                        organizerImage={
-                                            featuredChallenges[1].organizerImage
-                                        }
-                                        slug={featuredChallenges[1].slug}
-                                    />
+                                    <ChallengeCard task={FEATURED_TASKS[1]} />
                                 </div>
                                 <div className="absolute top-[17%] left-[12%] z-[1] hover:z-[10] transition-[z-index]">
-                                    <ChallengeCard
-                                        title={featuredChallenges[2].title}
-                                        prize={featuredChallenges[2].prize}
-                                        image={featuredChallenges[2].image}
-                                        organizer={featuredChallenges[2].organizer}
-                                        organizerImage={
-                                            featuredChallenges[2].organizerImage
-                                        }
-                                        slug={featuredChallenges[2].slug}
-                                    />
+                                    <ChallengeCard task={FEATURED_TASKS[2]} />
                                 </div>
                             </div>
                         </div>
