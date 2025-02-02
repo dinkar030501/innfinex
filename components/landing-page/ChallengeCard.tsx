@@ -26,7 +26,13 @@ export function ChallengeCard({ task }: { task: Task }) {
                     <h3 className="text-xl font-semibold text-white mb-2">
                         {task.title}
                     </h3>
-                    <p className="text-purple-200">{task.prize}</p>
+                    <p className="text-purple-200">
+                        {task.prize.toLocaleString('en-US', {
+                            style: 'currency',
+                            currency: 'USD',
+                            maximumFractionDigits: 0,
+                        })}
+                    </p>
                 </div>
                 <div className="flex items-center gap-2 bg-black px-3 py-1 rounded-full">
                     <Image
