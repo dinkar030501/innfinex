@@ -42,6 +42,7 @@ export interface Task {
         name: string
         image: string
     }
+    timeline: TaskTimeline[]
 }
 
 export type TaskStatus = 'active' | 'ended' | 'upcoming'
@@ -50,4 +51,10 @@ export type PrizeRange = {
     label: string
     min: number
     max: number
+}
+
+export interface TaskTimeline {
+    date: string
+    title: string
+    description: string
 }

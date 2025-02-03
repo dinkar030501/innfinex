@@ -15,57 +15,90 @@ export const taskTags = {
 export const FEATURED_TASKS: Task[] = [
     {
         id: 1,
-        title: 'ML Pipeline Optimization',
-        prize: 2000,
+        title: 'AI Model Optimization Challenge',
+        prize: 5000,
         image: '/challenges/ai-optimization.jpg',
-        slug: 'ml-pipeline-optimization',
-        summary: 'Enhance machine learning pipelines for efficiency and scalability.',
-        description:
-            'This challenge involves optimizing ML workflows, improving data processing, and reducing training times while maintaining model accuracy.',
-        total_participants: 9145,
-        taskDomains: ['Sketch', 'Figma'],
         organizer_id: 1,
         organizer: {
             id: 1,
-            name: 'DataFlow Inc',
-            image: '/organizers/dataflow.png',
-        },
-    },
-    {
-        id: 2,
-        title: 'Cloud Infrastructure Security',
-        prize: 4000,
-        image: '/challenges/sustainable-arch.jpg',
-        slug: 'cloud-infrastructure-security',
-        summary: 'Strengthen security measures for cloud-based systems.',
-        description:
-            'Participants will design and implement security solutions to protect cloud infrastructure against cyber threats and vulnerabilities.',
-        total_participants: 2145,
-        taskDomains: ['AWS', 'GitHub', 'Docker'],
-        organizer_id: 2,
-        organizer: {
-            id: 2,
             name: 'TechCorp AI',
             image: '/organizers/techcorp.png',
         },
+        slug: 'ai-model-optimization-challenge',
+        summary:
+            'Optimize AI models for better efficiency and performance in real-world scenarios.',
+        description:
+            'Participants will work on refining AI models to enhance accuracy, speed, and resource efficiency in real-world applications.',
+        total_participants: 8745,
+        taskDomains: ['Figma', 'Adobe Suite', 'Sketch'],
+        timeline: [
+            {
+                date: '2024-01-01',
+                title: 'Task 1',
+                description: 'Description of task 1',
+            },
+        ],
     },
     {
-        id: 3,
-        title: 'Real-time Analytics Dashboard',
-        prize: 3500,
-        image: '/challenges/quantum-comp.jpg',
-        slug: 'real-time-analytics-dashboard',
-        summary: 'Develop a high-performance real-time data analytics platform.',
-        description:
-            'This challenge focuses on building dashboards capable of processing and visualizing large-scale streaming data in real-time.',
-        total_participants: 2145,
-        taskDomains: ['Adobe Suite'],
-        organizer_id: 3,
+        id: 2,
+        title: 'Sustainable Code Architecture',
+        prize: 3000,
+        image: '/challenges/sustainable-arch.jpg',
+        organizer_id: 2,
         organizer: {
-            id: 3,
+            id: 2,
             name: 'GreenTech Solutions',
             image: '/organizers/greentech.png',
         },
+        slug: 'sustainable-code-architecture',
+        summary: 'Design scalable and energy-efficient software architectures.',
+        description:
+            'This challenge focuses on building robust, maintainable, and energy-efficient software architectures that minimize environmental impact.',
+        total_participants: 2145,
+        taskDomains: ['AWS', 'Docker', 'GitHub'],
+        timeline: [
+            {
+                date: '2024-02-01',
+                title: 'Initial Design',
+                description: 'Create architecture blueprint',
+            },
+            {
+                date: '2024-02-15',
+                title: 'Implementation',
+                description: 'Develop core components',
+            },
+        ],
+    },
+    {
+        id: 3,
+        title: 'Quantum Computing Algorithm',
+        prize: 10000,
+        image: '/challenges/quantum-comp.jpg',
+        organizer_id: 3,
+        organizer: {
+            id: 3,
+            name: 'QuantumLabs',
+            image: '/organizers/quantumlabs.png',
+        },
+        slug: 'quantum-computing-algorithm',
+        summary:
+            'Develop groundbreaking algorithms leveraging the power of quantum computing.',
+        description:
+            'Participants will explore and create innovative quantum algorithms to solve complex computational problems more efficiently than classical approaches.',
+        total_participants: 21945,
+        taskDomains: ['Unity', 'InVision'],
+        timeline: [
+            {
+                date: '2024-03-01',
+                title: 'Research',
+                description: 'Study quantum computing principles',
+            },
+            {
+                date: '2024-03-15',
+                title: 'Prototype',
+                description: 'Develop initial algorithm',
+            },
+        ],
     },
 ]
 
@@ -88,6 +121,18 @@ export const ALL_TASKS: Task[] = [
             name: 'DataFlow Inc',
             image: '/organizers/dataflow.png',
         },
+        timeline: [
+            {
+                date: '2024-06-01',
+                title: 'Design',
+                description: 'Create dashboard layout',
+            },
+            {
+                date: '2024-06-15',
+                title: 'Development',
+                description: 'Implement data processing',
+            },
+        ],
     },
     {
         id: 2,
@@ -106,6 +151,13 @@ export const ALL_TASKS: Task[] = [
             name: 'TechCorp AI',
             image: '/organizers/techcorp.png',
         },
+        timeline: [
+            {
+                date: '2024-07-01',
+                title: 'Design',
+                description: 'Create dashboard layout',
+            },
+        ],
     },
     {
         id: 3,
@@ -124,6 +176,13 @@ export const ALL_TASKS: Task[] = [
             name: 'GreenTech Solutions',
             image: '/organizers/greentech.png',
         },
+        timeline: [
+            {
+                date: '2024-07-01',
+                title: 'Design',
+                description: 'Create dashboard layout',
+            },
+        ],
     },
     {
         id: 4,
@@ -142,6 +201,18 @@ export const ALL_TASKS: Task[] = [
             name: 'QuantumLabs',
             image: '/organizers/quantumlabs.png',
         },
+        timeline: [
+            {
+                date: '2024-07-01',
+                title: 'Performance Analysis',
+                description: 'Analyze current app performance metrics',
+            },
+            {
+                date: '2024-07-15',
+                title: 'Optimization',
+                description: 'Implement performance improvements',
+            },
+        ],
     },
     {
         id: 5,
@@ -160,6 +231,18 @@ export const ALL_TASKS: Task[] = [
             name: 'VirtualTech',
             image: '/organizers/virtualtech.png',
         },
+        timeline: [
+            {
+                date: '2024-08-01',
+                title: 'Design',
+                description: 'Design smart contract architecture',
+            },
+            {
+                date: '2024-08-15',
+                title: 'Development',
+                description: 'Develop and test smart contracts',
+            },
+        ],
     },
     {
         id: 6,
@@ -178,6 +261,18 @@ export const ALL_TASKS: Task[] = [
             name: 'DataFlow Inc',
             image: '/organizers/dataflow.png',
         },
+        timeline: [
+            {
+                date: '2024-09-01',
+                title: 'Assessment',
+                description: 'Evaluate current DevOps processes',
+            },
+            {
+                date: '2024-09-15',
+                title: 'Automation',
+                description: 'Implement automation solutions',
+            },
+        ],
     },
     {
         id: 7,
@@ -197,6 +292,18 @@ export const ALL_TASKS: Task[] = [
             name: 'DataFlow Inc',
             image: '/organizers/dataflow.png',
         },
+        timeline: [
+            {
+                date: '2024-10-01',
+                title: 'Research',
+                description: 'Research edge computing technologies',
+            },
+            {
+                date: '2024-10-15',
+                title: 'Implementation',
+                description: 'Develop edge computing solutions',
+            },
+        ],
     },
     {
         id: 8,
@@ -215,6 +322,18 @@ export const ALL_TASKS: Task[] = [
             name: 'QuantumLabs',
             image: '/organizers/quantumlabs.png',
         },
+        timeline: [
+            {
+                date: '2024-11-01',
+                title: 'Model Design',
+                description: 'Design NLP model architecture',
+            },
+            {
+                date: '2024-11-15',
+                title: 'Training',
+                description: 'Train NLP models on datasets',
+            },
+        ],
     },
     {
         id: 9,
@@ -233,6 +352,18 @@ export const ALL_TASKS: Task[] = [
             name: 'DataFlow Inc',
             image: '/organizers/dataflow.png',
         },
+        timeline: [
+            {
+                date: '2024-12-01',
+                title: 'Architecture Design',
+                description: 'Design microservices architecture',
+            },
+            {
+                date: '2024-12-15',
+                title: 'Development',
+                description: 'Develop microservices components',
+            },
+        ],
     },
     {
         id: 10,
@@ -251,6 +382,18 @@ export const ALL_TASKS: Task[] = [
             name: 'DataFlow Inc',
             image: '/organizers/dataflow.png',
         },
+        timeline: [
+            {
+                date: '2025-01-01',
+                title: 'Data Collection',
+                description: 'Set up IoT data collection systems',
+            },
+            {
+                date: '2025-01-15',
+                title: 'Processing',
+                description: 'Implement data processing pipelines',
+            },
+        ],
     },
     {
         id: 11,
@@ -269,6 +412,18 @@ export const ALL_TASKS: Task[] = [
             name: 'DataFlow Inc',
             image: '/organizers/dataflow.png',
         },
+        timeline: [
+            {
+                date: '2025-02-01',
+                title: 'Security Assessment',
+                description: 'Assess current API security measures',
+            },
+            {
+                date: '2025-02-15',
+                title: 'Enhancement',
+                description: 'Implement security enhancements',
+            },
+        ],
     },
     {
         id: 12,
@@ -287,6 +442,18 @@ export const ALL_TASKS: Task[] = [
             name: 'QuantumLabs',
             image: '/organizers/quantumlabs.png',
         },
+        timeline: [
+            {
+                date: '2025-03-01',
+                title: 'Analysis',
+                description: 'Analyze database performance issues',
+            },
+            {
+                date: '2025-03-15',
+                title: 'Optimization',
+                description: 'Implement optimization strategies',
+            },
+        ],
     },
     {
         id: 13,
@@ -305,6 +472,18 @@ export const ALL_TASKS: Task[] = [
             name: 'DataFlow Inc',
             image: '/organizers/dataflow.png',
         },
+        timeline: [
+            {
+                date: '2025-04-01',
+                title: 'Design',
+                description: 'Create UI/UX design concepts',
+            },
+            {
+                date: '2025-04-15',
+                title: 'Implementation',
+                description: 'Develop and test UI/UX designs',
+            },
+        ],
     },
     {
         id: 14,
@@ -323,6 +502,18 @@ export const ALL_TASKS: Task[] = [
             name: 'DataFlow Inc',
             image: '/organizers/dataflow.png',
         },
+        timeline: [
+            {
+                date: '2025-05-01',
+                title: 'Research',
+                description: 'Research 5G network technologies',
+            },
+            {
+                date: '2025-05-15',
+                title: 'Development',
+                description: 'Develop 5G optimization solutions',
+            },
+        ],
     },
     {
         id: 15,
@@ -341,5 +532,17 @@ export const ALL_TASKS: Task[] = [
             name: 'QuantumLabs',
             image: '/organizers/quantumlabs.png',
         },
+        timeline: [
+            {
+                date: '2025-06-01',
+                title: 'Concept Design',
+                description: 'Design AR/VR application concepts',
+            },
+            {
+                date: '2025-06-15',
+                title: 'Development',
+                description: 'Develop AR/VR applications',
+            },
+        ],
     },
 ]
