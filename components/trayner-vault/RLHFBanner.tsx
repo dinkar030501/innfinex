@@ -18,9 +18,9 @@ export function RLHFBanner() {
 
                 <div className="space-y-4 relative z-10">
                     <h2 className="text-5xl font-bold text-white flex items-center gap-2">
-                        RLHF -{' '}
-                        <span className="text-3xl">
-                            Reinforcement Learning from Human Feedback
+                        RLHF{' '}
+                        <span className="hidden md:block text-3xl">
+                            - Reinforcement Learning from Human Feedback
                         </span>
                     </h2>
                     <p className="text-white/80 text-lg max-w-6xl">

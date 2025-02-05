@@ -57,7 +57,7 @@ export function NavBar() {
 
                 {!isAuthPage && (
                     <div className="flex items-center gap-6">
-                        <div className="hidden md:flex items-center gap-6">
+                        <div className="flex items-center gap-6">
                             <Link
                                 href="/trayner-vault"
                                 className="text-gray-300 hover:text-white"
@@ -77,7 +77,7 @@ export function NavBar() {
                                         {!isDashboardRoute && (
                                             <Link
                                                 href="/dashboard"
-                                                className="text-gray-300 hover:text-white"
+                                                className="hidden md:block text-gray-300 hover:text-white"
                                             >
                                                 Dashboard
                                             </Link>
@@ -95,6 +95,22 @@ export function NavBar() {
                                                     maxWidth: '12rem',
                                                 }}
                                             >
+                                                <DropdownMenuItem
+                                                    asChild
+                                                    className="md:hidden cursor-pointer hover:bg-gray-800 focus:bg-gray-800 text-gray-300 hover:text-white focus:text-white"
+                                                >
+                                                    <Link href="/dashboard">
+                                                        Dashboard
+                                                    </Link>
+                                                </DropdownMenuItem>
+                                                <DropdownMenuItem
+                                                    asChild
+                                                    className="md:hidden cursor-pointer hover:bg-gray-800 focus:bg-gray-800 text-gray-300 hover:text-white focus:text-white"
+                                                >
+                                                    <Link href="/task">
+                                                        Explore Tasks
+                                                    </Link>
+                                                </DropdownMenuItem>
                                                 <DropdownMenuItem
                                                     asChild
                                                     className="cursor-pointer hover:bg-gray-800 focus:bg-gray-800 text-gray-300 hover:text-white focus:text-white"

@@ -12,12 +12,12 @@ export default function HeroSection() {
 
     return (
         <div className="bg-black text-white">
-            <main className="relative py-16 md:py-20 md:pt-32">
+            <main className="relative py-12 md:py-20 md:pt-32">
                 {/* Gradient Background */}
                 <div className="absolute inset-0 bg-gradient-to-b from-theme-primary/40 to-black pointer-events-none" />
 
                 <div className="container relative z-10 mx-auto px-4">
-                    <div className="flex flex-col md:flex-row gap-8 items-start min-h-[70vh]">
+                    <div className="flex flex-col md:flex-row gap-8 items-start md:min-h-[70vh]">
                         {/* Left side content */}
                         <div className="md:w-1/2 mb-16 max-w-4xl text-left items-start flex flex-col gap-4">
                             <h1 className="mb-6 bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-4xl font-bold text-transparent md:text-6xl pb-[0.1em]">
@@ -54,7 +54,7 @@ export default function HeroSection() {
                         </div>
 
                         {/* Right side challenge cards */}
-                        <div className="md:w-1/2 relative h-[500px]">
+                        <div className="hidden md:block md:w-1/2 relative h-[500px]">
                             <div className="relative h-full">
                                 <div className="absolute top-[5%] left-[65%] z-[3] hover:z-[10] transition-[z-index]">
                                     <ChallengeCard task={FEATURED_TASKS[0]} />
