@@ -58,6 +58,14 @@ export function NavBar() {
                 {!isAuthPage && (
                     <div className="flex items-center gap-6">
                         <div className="hidden md:flex items-center gap-6">
+                            <Link
+                                href="/trayner-vault"
+                                className="text-gray-300 hover:text-white"
+                            >
+                                Trayner Vault
+                            </Link>
+                        </div>
+                        <div className="hidden md:flex items-center gap-6">
                             <Link href="/task" className="text-gray-300 hover:text-white">
                                 Explore Tasks
                             </Link>
