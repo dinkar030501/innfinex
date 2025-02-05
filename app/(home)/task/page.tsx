@@ -1,8 +1,9 @@
 import { TaskFilters } from '@/components/task-list/TaskFilters'
 import { TaskListCard } from '@/components/task-list/TaskListCard'
-import { ALL_TASKS } from '@/content/taskList'
+import { engineeringChallenges, featuredChallenges } from '@/content/taskList'
 
 export default function TaskListPage() {
+    const taskList = [...featuredChallenges, ...engineeringChallenges]
     return (
         <div className="min-h-screen bg-black text-white">
             <main className="pt-24 pb-16">
@@ -22,9 +23,9 @@ export default function TaskListPage() {
                             </div>
                         </div>
                         <div className="lg:col-span-3">
-                            <div className="grid md:grid-cols-3 gap-6 items-stretch">
-                                {ALL_TASKS.map((task) => (
-                                    <TaskListCard key={task.slug} task={task} />
+                            <div className="grid md:grid-cols-2 gap-6">
+                                {taskList.map((task) => (
+                                    <TaskListCard key={task.slug} {...task} />
                                 ))}
                             </div>
                         </div>

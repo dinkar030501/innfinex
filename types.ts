@@ -27,30 +27,17 @@ export interface LeaderboardData {
 }
 
 export interface Task {
-    id: number
-    slug: string
     title: string
-    prize: number
+    prize: string
     image: string
+    organizer: string
+    organizerImage: string
+    slug: string
     summary: string
     description: string
-    organizer_id: number
-    total_participants: number
+    participants: number
     taskDomains: string[]
-    organizer: {
-        id: number
-        name: string
-        image: string
-    }
     timeline: TaskTimeline[]
-}
-
-export type TaskStatus = 'active' | 'ended' | 'upcoming'
-
-export type PrizeRange = {
-    label: string
-    min: number
-    max: number
 }
 
 export interface TaskTimeline {

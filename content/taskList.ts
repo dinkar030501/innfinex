@@ -12,24 +12,19 @@ export const taskTags = {
 }
 
 // Featured challenges for hero section
-export const FEATURED_TASKS: Task[] = [
+export const featuredChallenges: Task[] = [
     {
-        id: 1,
         title: 'AI Model Optimization Challenge',
-        prize: 5000,
+        prize: '$5,000 Prize Pool',
         image: '/challenges/ai-optimization.jpg',
-        organizer_id: 1,
-        organizer: {
-            id: 1,
-            name: 'TechCorp AI',
-            image: '/organizers/techcorp.png',
-        },
+        organizer: 'TechCorp AI',
+        organizerImage: '/organizers/techcorp.png',
         slug: 'ai-model-optimization-challenge',
         summary:
             'Optimize AI models for better efficiency and performance in real-world scenarios.',
         description:
             'Participants will work on refining AI models to enhance accuracy, speed, and resource efficiency in real-world applications.',
-        total_participants: 8745,
+        participants: 8745,
         taskDomains: ['Figma', 'Adobe Suite', 'Sketch'],
         timeline: [
             {
@@ -40,21 +35,16 @@ export const FEATURED_TASKS: Task[] = [
         ],
     },
     {
-        id: 2,
         title: 'Sustainable Code Architecture',
-        prize: 3000,
+        prize: '$3,000 Prize Pool',
         image: '/challenges/sustainable-arch.jpg',
-        organizer_id: 2,
-        organizer: {
-            id: 2,
-            name: 'GreenTech Solutions',
-            image: '/organizers/greentech.png',
-        },
+        organizer: 'GreenTech Solutions',
+        organizerImage: '/organizers/greentech.png',
         slug: 'sustainable-code-architecture',
         summary: 'Design scalable and energy-efficient software architectures.',
         description:
             'This challenge focuses on building robust, maintainable, and energy-efficient software architectures that minimize environmental impact.',
-        total_participants: 2145,
+        participants: 2145,
         taskDomains: ['AWS', 'Docker', 'GitHub'],
         timeline: [
             {
@@ -70,22 +60,17 @@ export const FEATURED_TASKS: Task[] = [
         ],
     },
     {
-        id: 3,
         title: 'Quantum Computing Algorithm',
-        prize: 10000,
+        prize: '$10,000 Prize Pool',
         image: '/challenges/quantum-comp.jpg',
-        organizer_id: 3,
-        organizer: {
-            id: 3,
-            name: 'QuantumLabs',
-            image: '/organizers/quantumlabs.png',
-        },
+        organizer: 'QuantumLabs',
+        organizerImage: '/organizers/quantumlabs.png',
         slug: 'quantum-computing-algorithm',
         summary:
             'Develop groundbreaking algorithms leveraging the power of quantum computing.',
         description:
             'Participants will explore and create innovative quantum algorithms to solve complex computational problems more efficiently than classical approaches.',
-        total_participants: 21945,
+        participants: 21945,
         taskDomains: ['Unity', 'InVision'],
         timeline: [
             {
@@ -103,24 +88,69 @@ export const FEATURED_TASKS: Task[] = [
 ]
 
 // Extended list of engineering tasks and challenges
-export const ALL_TASKS: Task[] = [
+export const engineeringChallenges: Task[] = [
     {
-        id: 1,
         title: 'ML Pipeline Optimization',
-        prize: 2000,
+        prize: '$2,500 Prize Pool',
         image: '/challenges/ai-optimization.jpg',
+        organizer: 'DataFlow Inc',
+        organizerImage: '/organizers/dataflow.png',
         slug: 'ml-pipeline-optimization',
         summary: 'Enhance machine learning pipelines for efficiency and scalability.',
         description:
             'This challenge involves optimizing ML workflows, improving data processing, and reducing training times while maintaining model accuracy.',
-        total_participants: 9145,
+        participants: 9145,
         taskDomains: ['Sketch', 'Figma'],
-        organizer_id: 1,
-        organizer: {
-            id: 1,
-            name: 'DataFlow Inc',
-            image: '/organizers/dataflow.png',
-        },
+        timeline: [
+            {
+                date: '2024-04-01',
+                title: 'Analysis',
+                description: 'Identify bottlenecks',
+            },
+            {
+                date: '2024-04-15',
+                title: 'Optimization',
+                description: 'Implement improvements',
+            },
+        ],
+    },
+    {
+        title: 'Cloud Infrastructure Security',
+        prize: '$4,000 Prize Pool',
+        image: '/challenges/sustainable-arch.jpg',
+        organizer: 'TechCorp AI',
+        organizerImage: '/organizers/techcorp.png',
+        slug: 'cloud-infrastructure-security',
+        summary: 'Strengthen security measures for cloud-based systems.',
+        description:
+            'Participants will design and implement security solutions to protect cloud infrastructure against cyber threats and vulnerabilities.',
+        participants: 2145,
+        taskDomains: ['AWS', 'GitHub', 'Docker'],
+        timeline: [
+            {
+                date: '2024-05-01',
+                title: 'Assessment',
+                description: 'Identify vulnerabilities',
+            },
+            {
+                date: '2024-05-15',
+                title: 'Implementation',
+                description: 'Deploy security measures',
+            },
+        ],
+    },
+    {
+        title: 'Real-time Analytics Dashboard',
+        prize: '$3,500 Prize Pool',
+        image: '/challenges/quantum-comp.jpg',
+        organizer: 'GreenTech Solutions',
+        organizerImage: '/organizers/greentech.png',
+        slug: 'real-time-analytics-dashboard',
+        summary: 'Develop a high-performance real-time data analytics platform.',
+        description:
+            'This challenge focuses on building dashboards capable of processing and visualizing large-scale streaming data in real-time.',
+        participants: 2145,
+        taskDomains: ['Adobe Suite'],
         timeline: [
             {
                 date: '2024-06-01',
@@ -135,72 +165,17 @@ export const ALL_TASKS: Task[] = [
         ],
     },
     {
-        id: 2,
-        title: 'Cloud Infrastructure Security',
-        prize: 4000,
-        image: '/challenges/sustainable-arch.jpg',
-        slug: 'cloud-infrastructure-security',
-        summary: 'Strengthen security measures for cloud-based systems.',
-        description:
-            'Participants will design and implement security solutions to protect cloud infrastructure against cyber threats and vulnerabilities.',
-        total_participants: 2145,
-        taskDomains: ['AWS', 'GitHub', 'Docker'],
-        organizer_id: 2,
-        organizer: {
-            id: 2,
-            name: 'TechCorp AI',
-            image: '/organizers/techcorp.png',
-        },
-        timeline: [
-            {
-                date: '2024-07-01',
-                title: 'Design',
-                description: 'Create dashboard layout',
-            },
-        ],
-    },
-    {
-        id: 3,
-        title: 'Real-time Analytics Dashboard',
-        prize: 3500,
-        image: '/challenges/quantum-comp.jpg',
-        slug: 'real-time-analytics-dashboard',
-        summary: 'Develop a high-performance real-time data analytics platform.',
-        description:
-            'This challenge focuses on building dashboards capable of processing and visualizing large-scale streaming data in real-time.',
-        total_participants: 2145,
-        taskDomains: ['Adobe Suite'],
-        organizer_id: 3,
-        organizer: {
-            id: 3,
-            name: 'GreenTech Solutions',
-            image: '/organizers/greentech.png',
-        },
-        timeline: [
-            {
-                date: '2024-07-01',
-                title: 'Design',
-                description: 'Create dashboard layout',
-            },
-        ],
-    },
-    {
-        id: 4,
         title: 'Mobile App Performance',
-        prize: 2000,
+        prize: '$2,000 Prize Pool',
         image: '/challenges/ai-optimization.jpg',
+        organizer: 'QuantumLabs',
+        organizerImage: '/organizers/quantumlabs.png',
         slug: 'mobile-app-performance',
         summary: 'Optimize mobile applications for speed and efficiency.',
         description:
             'Developers will work on enhancing mobile app responsiveness, battery efficiency, and load times for better user experience.',
-        total_participants: 2145,
+        participants: 2145,
         taskDomains: ['Unity', 'Figma'],
-        organizer_id: 4,
-        organizer: {
-            id: 4,
-            name: 'QuantumLabs',
-            image: '/organizers/quantumlabs.png',
-        },
         timeline: [
             {
                 date: '2024-07-01',
@@ -215,22 +190,17 @@ export const ALL_TASKS: Task[] = [
         ],
     },
     {
-        id: 5,
         title: 'Blockchain Smart Contracts',
-        prize: 6000,
+        prize: '$6,000 Prize Pool',
         image: '/challenges/blockchain.png',
+        organizer: 'VirtualTech',
+        organizerImage: '/organizers/virtualtech.png',
         slug: 'blockchain-smart-contracts',
         summary: 'Build secure and efficient smart contracts on blockchain platforms.',
         description:
             'This challenge involves writing and optimizing smart contracts to ensure security, efficiency, and scalability in blockchain applications.',
-        total_participants: 2145,
+        participants: 2145,
         taskDomains: ['GitHub', 'AWS'],
-        organizer_id: 5,
-        organizer: {
-            id: 5,
-            name: 'VirtualTech',
-            image: '/organizers/virtualtech.png',
-        },
         timeline: [
             {
                 date: '2024-08-01',
@@ -245,22 +215,17 @@ export const ALL_TASKS: Task[] = [
         ],
     },
     {
-        id: 6,
         title: 'DevOps Automation Challenge',
-        prize: 3000,
+        prize: '$3,000 Prize Pool',
         image: '/challenges/devops.jpeg',
+        organizer: 'DataFlow Inc',
+        organizerImage: '/organizers/dataflow.png',
         slug: 'devops-automation-challenge',
         summary: 'Automate and streamline DevOps pipelines for faster deployments',
         description:
             'Create innovative solutions to automate CI/CD pipelines, infrastructure provisioning, and monitoring systems for efficient software delivery.',
-        total_participants: 2145,
+        participants: 2145,
         taskDomains: ['Docker', 'AWS'],
-        organizer_id: 6,
-        organizer: {
-            id: 6,
-            name: 'DataFlow Inc',
-            image: '/organizers/dataflow.png',
-        },
         timeline: [
             {
                 date: '2024-09-01',
@@ -275,23 +240,18 @@ export const ALL_TASKS: Task[] = [
         ],
     },
     {
-        id: 7,
         title: 'Edge Computing Solutions',
-        prize: 4500,
+        prize: '$4,500 Prize Pool',
         image: '/challenges/edge-computing.jpg',
+        organizer: 'TechCorp AI',
+        organizerImage: '/organizers/techcorp.png',
         slug: 'edge-computing-solutions',
         summary:
             'Develop efficient edge computing architectures for real-time processing',
         description:
             'Design and implement edge computing solutions that enable low-latency processing and data analysis closer to the source of data generation.',
-        total_participants: 2145,
+        participants: 2145,
         taskDomains: ['AWS', 'Docker'],
-        organizer_id: 6,
-        organizer: {
-            id: 6,
-            name: 'DataFlow Inc',
-            image: '/organizers/dataflow.png',
-        },
         timeline: [
             {
                 date: '2024-10-01',
@@ -306,22 +266,17 @@ export const ALL_TASKS: Task[] = [
         ],
     },
     {
-        id: 8,
         title: 'Natural Language Processing',
-        prize: 5500,
+        prize: '$5,500 Prize Pool',
         image: '/challenges/nlp.jpg',
+        organizer: 'QuantumLabs',
+        organizerImage: '/organizers/quantumlabs.png',
         slug: 'natural-language-processing',
         summary: 'Create advanced NLP models for text understanding and generation',
         description:
             'Develop cutting-edge natural language processing models for tasks like sentiment analysis, text summarization, and language translation.',
-        total_participants: 2145,
+        participants: 2145,
         taskDomains: ['GitHub', 'Unity'],
-        organizer_id: 8,
-        organizer: {
-            id: 8,
-            name: 'QuantumLabs',
-            image: '/organizers/quantumlabs.png',
-        },
         timeline: [
             {
                 date: '2024-11-01',
@@ -336,22 +291,17 @@ export const ALL_TASKS: Task[] = [
         ],
     },
     {
-        id: 9,
         title: 'Microservices Architecture',
-        prize: 3800,
+        prize: '$3,800 Prize Pool',
         image: '/challenges/microservices.jpg',
+        organizer: 'GreenTech Solutions',
+        organizerImage: '/organizers/greentech.png',
         slug: 'microservices-architecture',
         summary: 'Design scalable and maintainable microservices systems',
         description:
             'Create robust microservices architectures that enable independent deployment, scalability, and fault tolerance in distributed systems.',
-        total_participants: 2145,
+        participants: 2145,
         taskDomains: ['Docker', 'AWS'],
-        organizer_id: 6,
-        organizer: {
-            id: 6,
-            name: 'DataFlow Inc',
-            image: '/organizers/dataflow.png',
-        },
         timeline: [
             {
                 date: '2024-12-01',
@@ -366,22 +316,17 @@ export const ALL_TASKS: Task[] = [
         ],
     },
     {
-        id: 10,
         title: 'IoT Data Processing',
-        prize: 4200,
+        prize: '$4,200 Prize Pool',
         image: '/challenges/iot.jpg',
+        organizer: 'DataFlow Inc',
+        organizerImage: '/organizers/dataflow.png',
         slug: 'iot-data-processing',
         summary: 'Develop efficient IoT data processing pipelines',
         description:
             'Build systems for collecting, processing, and analyzing massive streams of data from IoT devices in real-time.',
-        total_participants: 2145,
+        participants: 2145,
         taskDomains: ['AWS', 'GitHub'],
-        organizer_id: 6,
-        organizer: {
-            id: 6,
-            name: 'DataFlow Inc',
-            image: '/organizers/dataflow.png',
-        },
         timeline: [
             {
                 date: '2025-01-01',
@@ -396,22 +341,17 @@ export const ALL_TASKS: Task[] = [
         ],
     },
     {
-        id: 11,
         title: 'API Security Challenge',
-        prize: 3200,
+        prize: '$3,200 Prize Pool',
         image: '/challenges/api-security.jpg',
+        organizer: 'TechCorp AI',
+        organizerImage: '/organizers/techcorp.png',
         slug: 'api-security-challenge',
         summary: 'Enhance API security and protect against vulnerabilities',
         description:
             'Develop solutions to secure APIs against common threats like DDoS attacks, injection vulnerabilities, and unauthorized access.',
-        total_participants: 2145,
+        participants: 2145,
         taskDomains: ['GitHub', 'Docker'],
-        organizer_id: 6,
-        organizer: {
-            id: 6,
-            name: 'DataFlow Inc',
-            image: '/organizers/dataflow.png',
-        },
         timeline: [
             {
                 date: '2025-02-01',
@@ -426,22 +366,17 @@ export const ALL_TASKS: Task[] = [
         ],
     },
     {
-        id: 12,
         title: 'Database Optimization',
-        prize: 2800,
+        prize: '$2,800 Prize Pool',
         image: '/challenges/database.jpg',
+        organizer: 'QuantumLabs',
+        organizerImage: '/organizers/quantumlabs.png',
         slug: 'database-optimization',
         summary: 'Optimize database performance and query efficiency',
         description:
             'Develop techniques to improve database query performance, indexing strategies, and storage optimization for large-scale systems.',
-        total_participants: 2145,
+        participants: 2145,
         taskDomains: ['AWS', 'GitHub'],
-        organizer_id: 8,
-        organizer: {
-            id: 8,
-            name: 'QuantumLabs',
-            image: '/organizers/quantumlabs.png',
-        },
         timeline: [
             {
                 date: '2025-03-01',
@@ -456,22 +391,17 @@ export const ALL_TASKS: Task[] = [
         ],
     },
     {
-        id: 13,
         title: 'UI/UX Innovation',
-        prize: 2500,
+        prize: '$2,500 Prize Pool',
         image: '/challenges/ui-ux.jpg',
+        organizer: 'GreenTech Solutions',
+        organizerImage: '/organizers/greentech.png',
         slug: 'ui-ux-innovation',
         summary: 'Create innovative and user-friendly interface designs',
         description:
             'Design and implement cutting-edge user interfaces that provide exceptional user experiences across different platforms and devices.',
-        total_participants: 2145,
+        participants: 2145,
         taskDomains: ['Figma', 'Sketch'],
-        organizer_id: 6,
-        organizer: {
-            id: 6,
-            name: 'DataFlow Inc',
-            image: '/organizers/dataflow.png',
-        },
         timeline: [
             {
                 date: '2025-04-01',
@@ -486,22 +416,17 @@ export const ALL_TASKS: Task[] = [
         ],
     },
     {
-        id: 14,
         title: '5G Network Solutions',
-        prize: 5000,
+        prize: '$5,000 Prize Pool',
         image: '/challenges/5g-network.jpg',
+        organizer: 'DataFlow Inc',
+        organizerImage: '/organizers/dataflow.png',
         slug: '5g-network-solutions',
         summary: 'Develop innovative solutions for 5G network optimization',
         description:
             'Create solutions to enhance 5G network performance, including latency reduction, bandwidth optimization, and network slicing techniques.',
-        total_participants: 2145,
+        participants: 2145,
         taskDomains: ['AWS', 'Docker'],
-        organizer_id: 6,
-        organizer: {
-            id: 6,
-            name: 'DataFlow Inc',
-            image: '/organizers/dataflow.png',
-        },
         timeline: [
             {
                 date: '2025-05-01',
@@ -516,22 +441,17 @@ export const ALL_TASKS: Task[] = [
         ],
     },
     {
-        id: 15,
         title: 'AR/VR Development',
-        prize: 4800,
+        prize: '$4,800 Prize Pool',
         image: '/challenges/quantum-comp.jpg',
+        organizer: 'VirtualTech',
+        organizerImage: '/organizers/virtualtech.jpg',
         slug: 'ar-vr-development',
         summary: 'Create immersive AR/VR experiences and applications',
         description:
             'Develop innovative augmented and virtual reality applications with focus on user interaction, performance optimization, and realistic rendering.',
-        total_participants: 2145,
+        participants: 2145,
         taskDomains: ['Unity', 'Sketch'],
-        organizer_id: 8,
-        organizer: {
-            id: 8,
-            name: 'QuantumLabs',
-            image: '/organizers/quantumlabs.png',
-        },
         timeline: [
             {
                 date: '2025-06-01',
