@@ -60,7 +60,7 @@ export function NavBar() {
                         <div className="flex items-center gap-6">
                             <Link
                                 href="/trayner-vault"
-                                className="text-gray-300 hover:text-white"
+                                className="hidden md:block text-gray-300 hover:text-white"
                             >
                                 Trayner Vault
                             </Link>
@@ -99,6 +99,14 @@ export function NavBar() {
                                                     asChild
                                                     className="md:hidden cursor-pointer hover:bg-gray-800 focus:bg-gray-800 text-gray-300 hover:text-white focus:text-white"
                                                 >
+                                                    <Link href="/trayner-vault">
+                                                        Trayner Vault
+                                                    </Link>
+                                                </DropdownMenuItem>
+                                                <DropdownMenuItem
+                                                    asChild
+                                                    className="md:hidden cursor-pointer hover:bg-gray-800 focus:bg-gray-800 text-gray-300 hover:text-white focus:text-white"
+                                                >
                                                     <Link href="/dashboard">
                                                         Dashboard
                                                     </Link>
@@ -130,7 +138,7 @@ export function NavBar() {
                                     <>
                                         <Link
                                             href="/login"
-                                            className="text-gray-300 hover:text-white"
+                                            className="hidden sm:block text-gray-300 hover:text-white "
                                         >
                                             Log in
                                         </Link>
