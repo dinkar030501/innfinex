@@ -45,10 +45,11 @@ export function Footer() {
                             href="/"
                             className="text-2xl font-bold text-white mb-4 inline-block"
                         >
-                            Innfinex<span className="text-purple-500">Platform</span>
+                            Infinite
+                            <span className="text-purple-500 text-xl"> Humans</span>
                         </Link>
                         <p className="text-sm text-gray-400 mb-4">
-                            Innfinex is an Infinite Intelligence Exchange Platform.
+                            Infinite Humans is an Infinite Intelligence Exchange Platform.
                         </p>
                         <div className="flex space-x-4">
                             {socialLinks.map((link) => {
@@ -117,8 +118,8 @@ export function Footer() {
                 <div className="mt-12 pt-8 border-t border-purple-500/20">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                         <p className="text-sm text-gray-400">
-                            © {new Date().getFullYear()} Innfinex Platform. All rights
-                            reserved.
+                            © {new Date().getFullYear()} Infinite Humans Platform. All
+                            rights reserved.
                         </p>
                         <ul className="flex flex-wrap justify-center gap-8">
                             {footerLinks.legal.map((link) => (

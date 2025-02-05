@@ -21,7 +21,8 @@ export default function HeroSection() {
                         {/* Left side content */}
                         <div className="md:w-1/2 mb-16 max-w-4xl text-left items-start flex flex-col gap-4">
                             <h1 className="mb-6 bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-4xl font-bold text-transparent md:text-6xl pb-[0.1em]">
-                                Innfinex is an Infinite Intelligence Exchange Platform
+                                Infinite Humans is an Infinite Intelligence Exchange
+                                Platform
                             </h1>
                             <p className="text-2xl text-gray-300">
                                 We&apos;re revolutionising how Intelligence Systems are
