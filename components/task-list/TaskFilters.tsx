@@ -1,29 +1,49 @@
 'use client'
 
+import { Search } from 'lucide-react'
 import { useState } from 'react'
-import { Button } from '@/components/ui/button'
+
 import { Badge } from '@/components/ui/badge'
 import { Input } from '@/components/ui/input'
-import { Search } from 'lucide-react'
+import { PrizeRange, TaskStatus } from '@/types'
+import { TASK_CATEGORIES } from '@/constants/constants'
+import { PRIZE_RANGES } from '@/constants/constants'
+import { Toggle } from '@/components/ui/toggle'
 
-const categories = [
-    'Machine Learning',
-    'Computer Vision',
-    'NLP',
-    'Robotics',
-    'Data Science',
-    'AI Ethics',
-]
-
-const prizeRanges = [
-    'Under $5,000',
-    '$5,000 - $20,000',
-    '$20,000 - $50,000',
-    'Over $50,000',
-]
+const statuses: TaskStatus[] = ['active', 'upcoming', 'ended']
 
 export function TaskFilters() {
-    const [activeFilter, setActiveFilter] = useState('active')
+    const [activeStatuses, setActiveStatuses] = useState<TaskStatus[]>([])
+    const [activeCategories, setActiveCategories] = useState<string[]>([])
+    const [activePrizeRange, setActivePrizeRange] = useState<PrizeRange | null>(null)
+
+    const handleCategoryClick = (categoryToToggle: string) => {
+        if (activeCategories.includes(categoryToToggle)) {
+            setActiveCategories(
+                activeCategories.filter((category) => category !== categoryToToggle)
+            )
+        } else {
+            setActiveCategories([...activeCategories, categoryToToggle])
+        }
+    }
+
+    const handlePrizeRangeClick = (range: PrizeRange) => {
+        setActivePrizeRange(activePrizeRange === range ? null : range)
+    }
+
+    const handleClearAll = () => {
+        setActiveStatuses([])
+        setActiveCategories([])
+        setActivePrizeRange(null)
+    }
+
+    const handleStatusClick = (status: TaskStatus) => {
+        if (activeStatuses.includes(status)) {
+            setActiveStatuses(activeStatuses.filter((s) => s !== status))
+        } else {
+            setActiveStatuses([...activeStatuses, status])
+        }
+    }
 
     return (
         <div className="space-y-6">
@@ -36,71 +56,77 @@ export function TaskFilters() {
                 />
             </div>
 
-            <div className="flex flex-wrap gap-2">
-                <Button
-                    variant={activeFilter === 'active' ? 'default' : 'outline'}
-                    onClick={() => setActiveFilter('active')}
-                    className={
-                        activeFilter === 'active'
-                            ? 'bg-purple-600 text-white hover:bg-purple-700'
-                            : 'border-purple-500/20 bg-black text-white hover:text-white hover:bg-purple-600/10'
-                    }
+            <section className="flex justify-between items-center">
+                <h3 className="text-md text-white">Filters</h3>
+                <span
+                    className="text-sm text-gray-400 cursor-pointer"
+                    onClick={handleClearAll}
                 >
-                    Active
-                </Button>
-                <Button
-                    variant={activeFilter === 'upcoming' ? 'default' : 'outline'}
-                    onClick={() => setActiveFilter('upcoming')}
-                    className={
-                        activeFilter === 'upcoming'
-                            ? 'bg-purple-600 text-white hover:bg-purple-700'
-                            : 'border-purple-500/20 bg-black text-white hover:text-white hover:bg-purple-600/10'
-                    }
-                >
-                    Upcoming
-                </Button>
-                <Button
-                    variant={activeFilter === 'past' ? 'default' : 'outline'}
-                    onClick={() => setActiveFilter('past')}
-                    className={
-                        activeFilter === 'past'
-                            ? 'bg-purple-600 text-white hover:bg-purple-700'
-                            : 'border-purple-500/20 bg-black text-white hover:text-white hover:bg-purple-600/10'
-                    }
-                >
-                    Past
-                </Button>
-            </div>
+                    Clear all
+                </span>
+            </section>
 
-            <div>
-                <h3 className="text-sm font-semibold text-white mb-3">Categories</h3>
+            <section className="border border-gray-700 rounded-md p-3">
+                <h3 className="text-gray-200 text-sm font-semibold mb-3">Status</h3>
                 <div className="flex flex-wrap gap-2">
-                    {categories.map((category) => (
+                    {statuses.map((status) => (
+                        <Toggle
+                            key={status}
+                            variant="outline"
+                            className={`
+                                        ${
+                                            activeStatuses.includes(status)
+                                                ? '!bg-purple-600'
+                                                : ''
+                                        } capitalize text-xs`}
+                            onPressedChange={() => handleStatusClick(status)}
+                            pressed={activeStatuses.includes(status)}
+                        >
+                            {status}
+                        </Toggle>
+                    ))}
+                </div>
+            </section>
+
+            <section className="border border-gray-700 rounded-md p-3">
+                <h3 className="text-gray-200 text-sm font-semibold mb-3">Categories</h3>
+                <div className="flex flex-wrap gap-2">
+                    {TASK_CATEGORIES.map((category) => (
                         <Badge
                             key={category}
                             variant="outline"
-                            className="bg-black/40 border-purple-500/20 text-gray-300 hover:border-purple-500 cursor-pointer"
+                            className={`
+                                ${
+                                    activeCategories.includes(category)
+                                        ? '!bg-purple-600'
+                                        : ''
+                                } capitalize hover:bg-accent hover:text-accent-foreground cursor-pointer`}
+                            onClick={() => handleCategoryClick(category)}
                         >
                             {category}
                         </Badge>
                     ))}
                 </div>
-            </div>
+            </section>
 
-            <div>
-                <h3 className="text-sm font-semibold text-white mb-3">Prize Range</h3>
+            <section className="border border-gray-700 rounded-md p-3">
+                <h3 className="text-gray-200 text-sm font-semibold mb-3">Prize Range</h3>
                 <div className="flex flex-wrap gap-2">
-                    {prizeRanges.map((range) => (
+                    {Object.values(PRIZE_RANGES).map((range) => (
                         <Badge
-                            key={range}
+                            key={range.label}
                             variant="outline"
-                            className="bg-black/40 border-purple-500/20 text-gray-300 hover:border-purple-500 cursor-pointer"
+                            className={`
+                                ${
+                                    activePrizeRange === range ? '!bg-purple-600' : ''
+                                } hover:bg-accent hover:text-accent-foreground cursor-pointer`}
+                            onClick={() => handlePrizeRangeClick(range)}
                         >
-                            {range}
+                            {range.label}
                         </Badge>
                     ))}
                 </div>
-            </div>
+            </section>
         </div>
     )
 }

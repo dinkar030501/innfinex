@@ -3,13 +3,13 @@
 import { useRouter } from 'next/navigation'
 
 import { Button } from '@/components/ui/button'
-import { engineeringChallenges } from '@/content/taskList'
+import { ALL_TASKS } from '@/content/taskList'
 import { ChallengeCard } from '@/components/landing-page/ChallengeCard'
 
 export function TasksSection() {
     const router = useRouter()
 
-    const displayedTasks = engineeringChallenges.slice(0, 9)
+    const displayedTasks = ALL_TASKS.slice(0, 9)
 
     return (
         <section className="bg-gradient-to-b from-black to-theme-primary-dark/40 py-12 relative overflow-hidden">
@@ -59,7 +59,7 @@ export function TasksSection() {
                                                 key={task.title}
                                                 className="max-w-[256px] w-full"
                                             >
-                                                <ChallengeCard {...task} />
+                                                <ChallengeCard task={task} />
                                             </div>
                                         )
                                     })}
@@ -85,7 +85,7 @@ export function TasksSection() {
                                                 key={task.title}
                                                 className="max-w-[256px] w-full"
                                             >
-                                                <ChallengeCard {...task} />
+                                                <ChallengeCard task={task} />
                                             </div>
                                         )
                                     })}
@@ -104,7 +104,7 @@ export function TasksSection() {
                                             key={task.title}
                                             className="max-w-[256px] w-full"
                                         >
-                                            <ChallengeCard {...task} />
+                                            <ChallengeCard task={task} />
                                         </div>
                                     )
                                 })}
