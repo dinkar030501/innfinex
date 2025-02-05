@@ -5,7 +5,7 @@ import { ArrowRight, Brain, Cpu, Network, Database, Code, Cloud, Bot } from 'luc
 export function RLHFBanner() {
     return (
         <section className="mt-10 container mx-auto px-4">
-            <div className="flex flex-col items-start justify-center gap-6 p-24 min-h-[240px] bg-gradient-to-br from-purple-500/40 to-black border rounded-3xl shadow-lg transition-all border-purple-400/50 relative overflow-hidden">
+            <div className="flex flex-col items-start justify-center gap-6 p-10 sm:p-24 min-h-[240px] bg-gradient-to-br from-purple-500/40 to-black border rounded-3xl shadow-lg transition-all border-purple-400/50 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-5 z-0">
                     <Brain className="absolute h-24 w-24 top-[5%] left-[10%] text-purple-400" />
                     <Cpu className="absolute h-16 w-16 top-[20%] right-[15%] text-purple-400" />
