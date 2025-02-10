@@ -58,3 +58,21 @@ export interface TaskTimeline {
     title: string
     description: string
 }
+
+export interface MyTask {
+    id: string
+    slug: string
+    title: string
+    prize: number
+    organizer_name: string
+    status: MyTaskStatus
+    created_at: Date
+    ended_at: Date | null
+}
+
+export type MyTaskStatus =
+    | 'IN_PROGRESS'
+    | 'IN_REVIEW'
+    | 'CANCELLED'
+    | 'EXPIRED'
+    | 'COMPLETED'

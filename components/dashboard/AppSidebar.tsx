@@ -1,15 +1,8 @@
-"use client"
+'use client'
 
-import {
-    Database,
-    DollarSign,
-    Home,
-    Settings,
-    User,
-    Upload,
-} from "lucide-react"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { Database, DollarSign, Home, Settings, User, Upload } from 'lucide-react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import {
     Sidebar,
     SidebarContent,
@@ -17,33 +10,33 @@ import {
     SidebarMenu,
     SidebarMenuButton,
     SidebarMenuItem,
-} from "@/components/ui/sidebar"
+} from '@/components/ui/sidebar'
 
 const menuItems = [
     {
-        title: "Overview",
+        title: 'Overview',
         icon: Home,
-        href: "/dashboard",
+        href: '/dashboard',
     },
     {
-        title: "Submit Data",
+        title: 'My Tasks',
         icon: Upload,
-        href: "/dashboard/submit",
+        href: '/dashboard/my-tasks',
     },
     {
-        title: "Earnings",
+        title: 'Earnings',
         icon: DollarSign,
-        href: "/dashboard/earnings",
+        href: '/dashboard/earnings',
     },
     {
-        title: "Profile",
+        title: 'Profile',
         icon: User,
-        href: "/dashboard/profile",
+        href: '/dashboard/profile',
     },
     {
-        title: "Settings",
+        title: 'Settings',
         icon: Settings,
-        href: "/dashboard/settings",
+        href: '/dashboard/settings',
     },
 ]
 
@@ -64,10 +57,7 @@ export function AppSidebar() {
                 <SidebarMenu>
                     {menuItems.map((item) => (
                         <SidebarMenuItem key={item.href}>
-                            <SidebarMenuButton
-                                asChild
-                                isActive={pathname === item.href}
-                            >
+                            <SidebarMenuButton asChild isActive={pathname === item.href}>
                                 <Link href={item.href}>
                                     <item.icon className="h-4 w-4" />
                                     <span>{item.title}</span>
