@@ -40,8 +40,8 @@ export function NavBar() {
             <div className="container mx-auto px-4 h-16 flex items-center justify-between relative">
                 <div className="flex items-center gap-8">
                     <Link href="/" className="text-2xl font-bold text-white">
-                        Infinite
-                        <span className="text-purple-500 text-xl"> Humans</span>
+                        Innfinex
+                        <span className="text-purple-500">Platform</span>
                     </Link>
                     {!isAuthPage && (
                         <div className="relative hidden md:block">
@@ -57,10 +57,10 @@ export function NavBar() {
 
                 {!isAuthPage && (
                     <div className="flex items-center gap-6">
-                        <div className="flex items-center gap-6">
+                        <div className="hidden md:flex items-center gap-6">
                             <Link
                                 href="/trayner-vault"
-                                className="hidden md:block text-gray-300 hover:text-white"
+                                className="text-gray-300 hover:text-white"
                             >
                                 Trayner Vault
                             </Link>
@@ -77,7 +77,7 @@ export function NavBar() {
                                         {!isDashboardRoute && (
                                             <Link
                                                 href="/dashboard"
-                                                className="hidden md:block text-gray-300 hover:text-white"
+                                                className="text-gray-300 hover:text-white"
                                             >
                                                 Dashboard
                                             </Link>
@@ -97,30 +97,6 @@ export function NavBar() {
                                             >
                                                 <DropdownMenuItem
                                                     asChild
-                                                    className="md:hidden cursor-pointer hover:bg-gray-800 focus:bg-gray-800 text-gray-300 hover:text-white focus:text-white"
-                                                >
-                                                    <Link href="/trayner-vault">
-                                                        Trayner Vault
-                                                    </Link>
-                                                </DropdownMenuItem>
-                                                <DropdownMenuItem
-                                                    asChild
-                                                    className="md:hidden cursor-pointer hover:bg-gray-800 focus:bg-gray-800 text-gray-300 hover:text-white focus:text-white"
-                                                >
-                                                    <Link href="/dashboard">
-                                                        Dashboard
-                                                    </Link>
-                                                </DropdownMenuItem>
-                                                <DropdownMenuItem
-                                                    asChild
-                                                    className="md:hidden cursor-pointer hover:bg-gray-800 focus:bg-gray-800 text-gray-300 hover:text-white focus:text-white"
-                                                >
-                                                    <Link href="/task">
-                                                        Explore Tasks
-                                                    </Link>
-                                                </DropdownMenuItem>
-                                                <DropdownMenuItem
-                                                    asChild
                                                     className="cursor-pointer hover:bg-gray-800 focus:bg-gray-800 text-gray-300 hover:text-white focus:text-white"
                                                 >
                                                     <Link href="/settings">Settings</Link>
@@ -138,7 +114,7 @@ export function NavBar() {
                                     <>
                                         <Link
                                             href="/login"
-                                            className="hidden sm:block text-gray-300 hover:text-white "
+                                            className="text-gray-300 hover:text-white"
                                         >
                                             Log in
                                         </Link>
