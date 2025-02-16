@@ -19,4 +19,9 @@ export default defineNuxtConfig({
       plugins: [],
     },
   },
+  nitro: {
+    output: {
+      dir: "./dist",
+    },
+  },
 });
